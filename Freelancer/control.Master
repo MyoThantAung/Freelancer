@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="control.master.cs" Inherits="Freelancer.control" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="m-css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="m-css/bootstrap.min.css" >
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="body" runat="server">
+
+
+
+        <nav class="navbar navbar-expand-sm sticky-top" style="z-index: 5;">
+                <!-- Brand -->
+                <a class="navbar-brand text-dark" href="index.aspx">Freelancer</a>
+              
+   
+              
+                <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#control_panel" data-toggle="collapse">
+                              <div id="img" class="" runat="server">
+              
+                                     
+                                  </div>
+                        </a>
+                      </li>
+                </ul>
+              
+              </nav>
+
+
+              
+
+<!-- control panel -->
+
+
+
+
+
+                        <div id="control_panel"  class="card  float-left " style="width:350px;z-index:0;border: 0px;" data-toggle="collapse">
+     
+                                <div class="card-body p-5" >
+                           
+                           
+                                 <div id="img_p" class="pl-5 pr-5" runat="server">
+                           
+                                     
+                                 </div>
+                                   
+                           
+                                  <h4 class="card-title text-center m-3" id="dis_name" runat="server"> </h4>
+                                  
+                                  <form class="form-signin">
+                           
+                                   <div class="form-label-group pt-4 pb-4 mt-2">
+
+                                    
+                                     
+                                    <a href="profile.aspx" class="btn btn-outline-dark w-100 m-2 border-light">Profile</a>
+                                        <a href="mypost.aspx" class="btn btn-outline-dark w-100 m-2 border-light">My Post</a>
+                                        <a href="post.aspx" class="btn btn-outline-dark w-100 m-2 border-light">Upload Post</a>
+              
+                    
+                                    <a href="employer.aspx" class="btn btn-outline-dark w-100 m-2 border-light">My employer</a>
+                                    <a href="employee.aspx" class="btn btn-outline-dark w-100 m-2 border-light">My employee</a>
+                                    <a href="wallet.aspx" class="btn btn-outline-dark w-100 m-2 border-light">My wallet</a>
+                                       <a href="logout.aspx" class="btn btn-outline-danger w-100 m-2 border-light">Log Out</a>
+
+                                   
+
+                                      
+                                     
+                                   </div>
+                           
+                                   
+                           
+                             
+                                   
+                                   
+                                 </form>
+                           
+                                
+                                </div>
+                           
+                               
+                              </div> 
+               
+
+                <!-- panel -->
+
+                              <div class="card h-100 w-auto" style="border:0px">
+     
+                                    <div class="card-body p-5"  >
+                               
+                            
+                                      
+      <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+                                      
+                               
+                                    
+                                    </div>
+                               
+                                   
+                                  </div> 
+
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+</body>
+</html>

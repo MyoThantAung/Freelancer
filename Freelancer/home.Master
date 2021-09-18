@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="Freelancer.home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title>Freelancer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="m-css/bootstrap.min.css">
+    <link rel="stylesheet" href="m-css/style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+ 
+<body id="body" runat="server">
+
+
+     <nav class="navbar navbar-expand-sm sticky-top" style="z-index: 5;">
+  <!-- Brand -->
+  <a class="navbar-brand text-dark" href="index.aspx">Freelancer</a>
+
+          
+
+  <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link">
+                <div id="img" runat="server">
+
+                      
+                    </div>
+          </a>
+        </li>
+  </ul>
+
+</nav>
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+     <div class="footer-copyright text-center py-3" style="background:#1d1d1d;color:white">© 2019 Copyright:
+            <a href="">Group 3</a>
+          </div>
+
+</body>
+</html>
